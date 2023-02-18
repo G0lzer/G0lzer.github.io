@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 10px;
+}
+
+body {
+    background-color: #c4cef2;
+    font-family: Oswald;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 300px;
+    color: #404258;
+    margin-bottom: 10px;
+}
+.bottom-line {
+    display: block;
+    border: none;
+    height: 1.5px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 450, from(#40425871), to(rgba(255, 255, 255, 0)));
+    margin-top: 16px;
+}

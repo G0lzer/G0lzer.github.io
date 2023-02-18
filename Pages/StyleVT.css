@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 10px;
+}
+
+body {
+    background-color: #c4cef2;
+    font-family: Oswald;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 300px;
+    color: #404258;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item1 {
+    border: 2px solid #404258;
+    border-radius: 5px;
+    font-size: 22px;
+}
+.grid-item2 {
+    border: 2px solid #404258;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+
+.grid-item10 {
+    border: 2px solid #ff0000;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+
+
+.grid-item11 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+.bottom-line {
+    display: block;
+    border: none;
+    height: 1.5px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 450, from(#40425871), to(rgba(255, 255, 255, 0)));
+    margin-top: 16px;
+}
+
+img {
+    height: 200px;
+}
+
+.change {
+    transition: transform 1.5s;
+    cursor: pointer;
+}
+
+.change:hover {
+    transform: scale(1.5);
+}
+.change2 {
+    transition: transform 1.5s;
+    cursor: pointer;
+}
+
+.change2:hover {
+    transform: scale(2.5);
+}
+
+.text1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 1s;
+}
+
+.text1:hover {
+    transform: color;
+    cursor: not-allowed;
+    color: red;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+.grid-item-video
+{
+    border: 3px solid #404258;
+    border-radius: 5px;
+}
+iframe
+{
+    height: 250px;
+    width: 400px;
+    border: none;
+}
