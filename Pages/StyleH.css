@@ -47,6 +47,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 25px;
+    place-items: center;
 }
 
 .grid-item1 {
