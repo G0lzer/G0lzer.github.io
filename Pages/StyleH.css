@@ -48,6 +48,8 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 25px;
     place-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-item1 {
