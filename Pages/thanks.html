@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDATED</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/43cdeb7d87.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Oswald;
+            font-size: 20px;
+            line-height: 1.5;
+            padding: 120px;
+            text-align: center;
+            background-color: #c4cef2;
+            text-transform: uppercase;
+            color: #404258;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 60px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .timer {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="thanks-header">Thanks for Staying Updated</h1>
+        <p>You will be redirected to the home page in <span id="timer">5</span> seconds.</p>
+        <div class="timer"></div>
+    </div>
+    <script>
+        document.getElementById('thanks-header').innerHTML = 'Thanks for Staying Updated!';
+        
+        setTimeout(function () {
+            var timeLeft = 5;
+            var timer = document.getElementById('timer');
+        
+            var countdown = setInterval(function () {
+                timeLeft--;
+                timer.innerHTML = timeLeft;
+        
+                if (timeLeft <= 0) {
+                    clearInterval(countdown);
+                    window.location.replace('main.html')
+                    
+                }
+            }, 1000);
+        }, 1500); </script>
+    
+</body>
+
+</html>
+
+</html>
